@@ -1,0 +1,48 @@
+# CONFIG for the training and calibration
+
+CONFIG = {
+    'MNIST': {
+        'TRAINING_INDEX_START': 0,
+        'TRAINING_INDEX_END': 10000,  # use the first 10000 images for training
+
+
+        'CAL_TEST_INDEX_START': 10000,
+        'CAL_TEST_INDEX_END': 12000,
+
+        'TRAINING_OUT_INDEX_START': 20000,
+        'TRAINING_OUT_INDEX_END': 22000,
+
+        'QUERY_TRAIN_INDEX_START': 30000,
+        'QUERY_TRAIN_INDEX_END': 35000,
+
+        'QUERY_OUT_TRAIN_INDEX_START': 30000,
+        'QUERY_OUT_TRAIN_INDEX_END': 40000,
+
+        'FOLD_NUM': 5
+    },
+    
+    'COVID': {
+        'TRAINING_INDEX_START': 0,
+        'TRAINING_INDEX_END': 4000,
+
+        'TRAINING_TEST_INDEX_START': 4000,
+        'TRAINING_TEST_INDEX_END': 5000,
+
+        'CAL_TRAIN_INDEX_START': 5000,
+        'CAL_TRAIN_INDEX_END': 9000,
+
+        'CAL_TEST_INDEX_START': 9000,
+        'CAL_TEST_INDEX_END': 10000,
+
+        'TRAINING_OUT_INDEX_START': 10000,
+        'TRAINING_OUT_INDEX_END': 10800,
+
+        'QUERY_TRAIN_INDEX_START': 11000,
+        'QUERY_TRAIN_INDEX_END': 15000,
+
+        'QUERY_OUT_TRAIN_INDEX_START': 0,
+        'QUERY_OUT_TRAIN_INDEX_END': 4000,
+
+        'FOLD_NUM': 5
+    }
+}
